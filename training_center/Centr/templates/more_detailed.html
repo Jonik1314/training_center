@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ detail.title }}</title>
+</head>
+<body>
+    <h1>{{ detail.title }}</h1>
+    <p>{{ detail.description }}</p>
+    <img src="{{ detail.image.url }}" alt="{{ detail.title }}">
+    <p>Value Programs: {{ detail.value_programs }}</p>
+    <p>Type: {{ detail.get_type_display }}</p>  # Отображение типа
+</body>
+</html>

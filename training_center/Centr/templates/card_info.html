@@ -1,0 +1,41 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+ 	<div class='contain_er'>
+		<div class="car_d">
+			<div class="titl_e">{{ detail.title }}</div>
+			<div class="info">
+				<p>Старт ближайшей группы:</p>
+				<h3>1 Ноября 2024г.</h3>
+				<p>Стоимость обучения:</p>
+				<h3>7 000 руб. </h3>
+				<p>(с возможностью рассрочки платежа)</p>
+			</div>
+			<div class="button_s">
+				<a target="_blank" href="record_view">
+					<button class="butto_n yellow-button">Записаться</button></a>
+				<a target="_blank" href="payment">
+					<button class="butto_n blue-button">Оплатить</button></a>
+			</div>
+		</div>
+		<div id='car_d'>   </div>
+		<div class="car_d2">
+			<div class='topic'> О П И С А Н И Е </div>
+			<div id='tic' >
+				
+				<h4><span style='color: #ffc107;font-size: 18px;'>Название программы:</span> {{item.title}} </h4>
+				<h4><span style='color: #ffc107;font-size: 18px;'>Стоимость обучения:</span> 7 000 руб. (С возможностью рассрочки платежа) </h4>
+				<h4><span style='color: #ffc107;font-size: 18px;'> Вид образовательной программы:</span> профессиональная переподготовка  </h4>
+				<h4><span style='color: #ffc107;font-size: 18px;'> Формат обучения:</span> дистанционный (без отрыва от работы, в любом городе РФ)  </h4>
+				<h4><span style='color: #ffc107;font-size: 18px;'> Продолжительность курса:</span> 3 месяца, возможно ускоренное обучение  </h4>
+				<h4><span style='color: #ffc107;font-size: 18px;'> Объем программы:</span> 520 часов   </h4>
+				<h4><span style='color: #ffc107;font-size: 18px;'>Требования:</span> наличие любого высшего или среднего профессионального образования</h4>
+				<h4>Посмотреть <button class='tr' id="openPdf">Учебный план</button> </h4>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'js/card_info.js' %}"> </script>
+
+{% block content %}
